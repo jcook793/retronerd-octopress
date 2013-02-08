@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Penguins"
 date: 2012-03-13 18:09
 comments: true
-categories: 
+categories: [EC2, Python]
 ---
 ![](/assets/images/flying-penguin.png)
 

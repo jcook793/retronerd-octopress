@@ -3,7 +3,7 @@ layout: post
 title: "PyPi Cache"
 date: 2012-04-30 17:42
 comments: true
-categories: 
+categories: [Python, Apache]
 ---
 
 ![](/assets/images/pi-pie.jpg)
