@@ -7,11 +7,17 @@ published: false
 categories: Python
 ---
 ![](/assets/images/world-of-python.png)
-When I [first started learning Python](http://code.google.com/edu/languages/google-python-class/), I quickly became a fan of the syntax.  Tuples, dictionaries and list comprehensions are some cool language features that remove a lot of boilerplate.  But as I waded into existing projects I kept running into environmental concepts like eggs, easy\_install, pip, virtualenv and other scaffolding that have nothing to do with the language per se, but everyone took for granted that I already knew.
+When I [first started learning Python](http://code.google.com/edu/languages/google-python-class/), I quickly became a fan of the syntax.  Tuples, dictionaries and list comprehensions are some cool language features that remove a lot of boilerplate.  But as I waded into existing projects I kept running into environmental concepts like eggs, easy\_install, pip, virtualenv and other scaffolding that have nothing to do with the language per se, but I needed to know to do anything useful with it.
 
-But I could find no top-down blog post on this Python ecosystem that I was supposed to already know about.
+However I couldn't find any overview of this Python ecosystem that I was supposed to already know about.
 
-It’s easy to start mumbling "this Python thing is a disorganized mess", but I recognized that if someone were to walk into a world I already know quite well they would be just as lost.  A Java newbie might rightly ask what is a classpath?  What is a JAR?  An EAR?  Wait, who declared WAR?  What the hell is container managed persistence?  Why would I want to use Ant or Maven or Ivy?
+It's easy to start mumbling "this Python thing is a disorganized mess", but I recognized that if someone were to walk into a world I already know quite well they would be just as lost.  A Java newbie might rightly ask:
+
+> What is a classpath?<br/>
+> What is a JAR?<br/>
+> An EAR?<br/>
+> Wait, who declared WAR?<br/>
+> Why would I want to use Ant or Maven or Ivy?<br/>
 
 So I took a step back and did a survey of the land.  And here’s what I found.
 
@@ -19,7 +25,7 @@ So I took a step back and did a survey of the land.  And here’s what I found.
 [This 2005 post to the distutils mailing list](http://mail.python.org/pipermail/distutils-sig/2005-June/004652.html) by [P.J. Eby](http://dirtsimple.org/programming/) defines a lot of these concepts.
 
 ### Eggs
-An egg is a distribution of a Python package.  An egg is similar to a [Java JAR](http://en.wikipedia.org/wiki/JAR_(file_format)), but has more in common with a [Ruby gem](http://docs.rubygems.org/read/chapter/1#page22) as eggs support declaring dependencies and defining multiple entry points.  If you want to read a lot more about the egg format --TODO: Link
+An egg is a distribution of a Python package.  An egg is similar to a [Java JAR](http://en.wikipedia.org/wiki/JAR_(file_format) but has more in common with a [Ruby gem](http://docs.rubygems.org/read/chapter/1#page22), as eggs support declaring dependencies and defining multiple entry points.  If you want to read a lot more about the egg format --TODO: Link
 
 #### Built Eggs
 Built eggs are directories or zipfiles whose name ends with .egg and follows the egg naming conventions, and contain an EGG-INFO subdirectory (zipped or otherwise).
