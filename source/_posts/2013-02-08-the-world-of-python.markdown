@@ -21,6 +21,8 @@ It's easy to start mumbling "this Python thing is a disorganized mess", but I re
 
 So I took a step back and did a survey of the land.  And here’s what I found.
 
+<!-- more -->
+
 ## Package Management
 [This 2005 post to the distutils mailing list](http://mail.python.org/pipermail/distutils-sig/2005-June/004652.html) by [P.J. Eby](http://dirtsimple.org/programming/) defines a lot of these concepts.
 

@@ -7,7 +7,9 @@ categories: [EC2, Python]
 ---
 ![](/assets/images/flying-penguin.png)
 
-This weekend I was tasked with setting up a new [Jenkins](http://jenkins-ci.org/) server on EC2.  I’ve used a server built from [Amazon’s official Linux AMI](http://aws.amazon.com/amazon-linux-ami/) before and was happy enough with it.  So I went that route.
+This weekend I was tasked with setting up a new [Jenkins](http://jenkins-ci.org/) server on EC2.  I’ve used a server built from [Amazon’s official Linux AMI](http://aws.amazon.com/amazon-linux-ami/) before and was happy enough with it.  So I went that route.  But it didn't end very well...
+
+<!-- more -->
 
 I did the typical wrestling with Apache, Tomcat and SSL configuration.  Our project uses Python 2.7 and when the first test build failed I was a bit surprised that it wasn’t installed.  I confidently typed
 `sudo yum install python27`

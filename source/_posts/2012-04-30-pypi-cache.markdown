@@ -24,7 +24,12 @@ Not many things are more annoying than a build failure that is nobody’s fault:
  
  BUILD FAILED
 ```
+The **code** is fine, but our build depends on a website that we don't control!
+
+<!-- more -->
+
 We use [Jenkins](http://jenkins-ci.org/) for our automated builds which runs [Buildout](http://www.buildout.org/) to assemble our project for deployment.  Buildout checks the [PyPi index](http://pypi.python.org/pypi) for any new packages that are needed or any new versions for packages that are not version-pinned.  So if PyPi is unavailable (or very slow) for a while, our build fails.  That sucks because Jenkins won’t try another build until it detects a new changelist in our repository.
+
 
 ## The Solution
 I started looking into how we could cache PyPi locally to avoid this problem altogether.  I found [several](http://www.apache.org/info/mirror-proxy.html) [ways](http://pypi.python.org/pypi/pep381client) to [achieve](http://pypi.python.org/pypi/z3c.pypimirror) [this](http://yopypi.googlecode.com/hg/docs/build/html/index.html), but finally settled on [collective-eggproxy](http://pypi.python.org/pypi/collective.eggproxy).  I mainly chose it for 2 reasons:
