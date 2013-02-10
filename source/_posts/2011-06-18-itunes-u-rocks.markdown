@@ -5,7 +5,7 @@ date: 2011-06-18 00:09
 comments: true
 categories: iOS
 ---
-![](/assets/images/itunes-grad.png)
+{% img center /assets/images/itunes-grad.png %}
 
 On the side I've just started helping out on a fun iOS project.  iPhone development is one of those things that I've been meaning to do for literally 2 years now.  Finally getting that off the ground feels good.
 

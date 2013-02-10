@@ -5,7 +5,7 @@ date: 2012-03-13 18:09
 comments: true
 categories: [EC2, Python]
 ---
-![](/assets/images/flying-penguin.png)
+{% img center /assets/images/flying-penguin.png Photo credit to jbliss2006 from worth1000.com %}
 
 This weekend I was tasked with setting up a new [Jenkins](http://jenkins-ci.org/) server on EC2.  I’ve used a server built from [Amazon’s official Linux AMI](http://aws.amazon.com/amazon-linux-ami/) before and was happy enough with it.  So I went that route.  But it didn't end very well...
 

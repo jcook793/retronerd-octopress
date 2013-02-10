@@ -7,6 +7,8 @@ categories: Java
 ---
 Today while researching a production issue I found a concurrency bug when formatting a date. It really wasn't anyone’s glaring fault, it's mainly just an artifact of our still-in-progress transition to Spring. We have an MDB that calls an EJB that calls a Spring-created object which has an object-local variable that is a SimpleDateFormat. The problem is that [by default, Spring beans are singletons](http://static.springsource.org/spring/docs/1.2.9/reference/beans.html#beans-factory-modes). Combine that with the fact that [SimpleDateFormat is not thread-safe](http://download.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html#synchronization) and hilarity ensues.
 
+<!-- more -->
+
 {% img center /assets/images/simpledateformat-diagram.png %}
 
 Anyone could have missed that – I even knew something was potentially wrong in the date formatting code and seeing SimpleDateFormat threw up some immediate alarms, but it still took me quite a while to walk the dependency chain and then realize the EJB-transitioning-to-Spring-bean was a singleton.

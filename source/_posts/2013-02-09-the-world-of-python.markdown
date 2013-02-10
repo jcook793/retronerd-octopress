@@ -5,7 +5,8 @@ date: 2013-02-09 18:34
 comments: true
 categories: Python
 ---
-![](/assets/images/world-of-python.png)
+{% img center /assets/images/world-of-python.png %}
+
 When I [first started learning Python](http://code.google.com/edu/languages/google-python-class/), I quickly became a fan of the syntax.  Tuples, dictionaries and list comprehensions are some cool language features that remove a lot of boilerplate.  But as I waded into existing projects I kept running into environmental concepts like eggs, easy\_install, pip, virtualenv and other scaffolding that have nothing to do with the language per se, but I needed to know to do anything useful with it.
 
 However I couldn't find any overview of this Python ecosystem that I needed to navigate.

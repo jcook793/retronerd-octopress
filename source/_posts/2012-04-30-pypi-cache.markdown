@@ -6,7 +6,7 @@ comments: true
 categories: [Python, Apache]
 ---
 
-![](/assets/images/pi-pie.jpg)
+{% img center /assets/images/pi-pie.jpg %}
 
 ## The Problem
 Not many things are more annoying than a build failure that is nobody’s fault:
