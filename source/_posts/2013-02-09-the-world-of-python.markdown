@@ -95,7 +95,7 @@ The setuptools project was forked into the Distribute project. Now most people u
 
 * Fetching all the dependencies for a project
 * Keeping those dependencies out of your system Python
-* Creating a `python` script that includes the paths for you project dependencies along with your project code so you don't need to poison your system Python
+* Creating a `python` script that includes the paths for your project dependencies along with your project code so you don't need to poison your system Python
 
 It does a lot of other stuff, but start thinking of it that way and not necessarily like `make` or `rake` or Ant/Maven.
 
